@@ -1,13 +1,123 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: 'Laviossa';
+    src: local('Laviossa'),
+      url(./assets/fonts/Laviossa.otf) format('otf');
+  }
+}
+.nav-text {
+  @apply text-santorini-med text-xs font-PT_Sans font-bold uppercase tracking-wider;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-home {
+  @apply text-8xl text-transparent normal-case;
+  font-family: 'Laviossa';
+}
+
+.header1-home {
+  @apply text-2xl text-santorini-med normal-case;
+  font-family: 'Laviossa';
+}
+
+.header2-home {
+  @apply text-3xl text-santorini-s_dark normal-case;
+  font-family: 'Laviossa';
+}
+
+.card-header {
+  @apply text-lg text-santorini-s_dark normal-case;
+  font-family: 'Laviossa';
+}
+
+.card-content {
+  @apply text-xs;
+  font-family: 'PT Sans';
+}
+
+.footer-font {
+  @apply text-xs;
+  font-family: 'PT Sans';
+}
+
+.header1-product {
+  @apply text-8xl text-santorini-med normal-case;
+  font-family: 'Laviossa';
+  line-height: 1.25em;
+}
+
+.header2-product {
+  @apply text-2xl text-santorini-s_dark normal-case tracking-widest;
+  font-family: 'PT Sans';
+}
+
+.header3-product {
+  @apply text-6xl text-santorini-s_dark;
+  font-family: 'Laviossa';
+  line-height: 1.25em;
+}
+
+.price-product {
+  @apply text-2xl text-santorini-dark normal-case tracking-widest;
+  font-family: 'PT Sans';
+}
+
+.link-product {
+  @apply text-sm text-santorini-med normal-case tracking-wider;
+  font-family: 'PT Sans';
+}
+
+.normal-product {
+  @apply text-sm text-black normal-case;
+  font-family: 'PT Sans';
+}
+
+.blend-text {
+  @apply text-lg text-white normal-case;
+  font-family: 'PT Sans';
+}
+
+.blend-name {
+  @apply text-2xl text-santorini-light normal-case;
+  font-family: 'PT Sans';
+}
+
+.recipe-text {
+  @apply text-3xl text-black normal-case;
+  font-family: 'PT Sans';
+}
+
+.laviossa-text {
+  font-family: 'Laviossa';
+}
+
+.ptsans-text {
+  font-family: 'PT Sans';
+}
+
+.product-size {
+  @apply text-xs text-black;
+  font-family: 'PT Sans';
+}
+
+.product-name {
+  @apply text-xl text-black;
+  font-family: 'Laviossa';
+}
+
+.product-price {
+  @apply text-lg text-black;
+  font-family: 'PT Sans';
+}
+
+.header1-catalog {
+  @apply text-4xl text-santorini-med;
+}
+
+.height-image-detail {
+  height: 50rem;
 }
